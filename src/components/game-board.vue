@@ -4,6 +4,7 @@
       <div
         v-for="(card, index) in game.deck.items"
         class="game-card game-card--back"
+        :key="`card-index-${index}`"
         :style="{left: `${index * .3}px`, top: `${index * .3}px`}"
       ></div>
     </div>
